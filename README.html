@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIK UISI</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "185px";
+    document.getElementById("main").style.marginLeft = "185px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.1)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+<div id="main">
+<ul>
+
+
+<div class="foto-logo">
+  <li><a href=""><img src="img/logo.png" width="100px" height="40px" padding:"20px"></a></li>
+</div>
+
+<a style="cursor:pointer" onclick="openNav()"><img style="padding:8px;" src="img/navbar.svg" width="20px" height="25px"></a>
+
+</ul>
+<div>
+	<a href="#" style="margin-left: 100px"><img style="padding-right: 15px; padding-top:10px;" width="18px" height="18" src="img/home.png"><font style="font-family:Lato,sans-serif" size="3">Beranda</font></a>
+	<a style="padding-left: 825px"><?php
+		date_default_timezone_set("Asia/Jakarta");
+		echo " "	 . date("d/m/Y h:i:s");
+		?>
+	</a>
+<hr>
+
+</div>
+
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">isien dewe</a>
+  <a href="#">emboh opo</a>
+  <a href="#">iki mek contoh</a>
+  <a href="#">yo  kyk ngunu</a>
+</div>
+	
+</div>
+</body>
+</html>
